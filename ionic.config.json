@@ -1,0 +1,7 @@
+{
+  "name": "vigilarRuta",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
