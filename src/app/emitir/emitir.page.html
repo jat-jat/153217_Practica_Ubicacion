@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Emitir ubicación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src="assets/emitiendo.gif" class="center" style='width: 128px; height: 128px;'></ion-img>
+  
+  <ion-chip outline color="primary" class="center">
+    <ion-icon name="checkmark-circle"></ion-icon>
+    <ion-label>Puntos geográficos emitidos: {{puntosSubidos}}</ion-label>
+  </ion-chip>
+
+  <br>
+
+  <ion-chip outline color="danger" class="center">
+    <ion-icon name="close-circle"></ion-icon>
+    <ion-label>Emisiones fallidas: {{puntosErrados}}</ion-label>
+  </ion-chip>
+
+  <br>
+
+  Cuando hayas llegado a tu destino, pulsa el botón de retorno, ubicado en la esquina superior izquierda.
+  
+</ion-content>

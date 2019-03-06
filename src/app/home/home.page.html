@@ -1,12 +1,44 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color='primary'>
     <ion-title>
-      Ionic Blank
+      Vigilancia de ruta
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+
+  <ion-card (click)="irAPagina('/emitir')" >
+    <img src="assets/img_emitir.png"/>
+
+    <ion-card-header>
+      <ion-card-title>Emitir ubicación</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Al salir a la calle, elige esta opción para ir trazando tu ruta.
+      Mientras la app esté abierta, ya sea en primer o segundo plano, otras personas podrán
+      visualizar dicha ruta.
+      Sólo una persona puede ejecutar esta opción a la vez.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card (click)="irAPagina('/vigilar')">
+    <img src="assets/img_vigilar.png"/>
+
+    <ion-card-header>
+      <ion-card-title>Vigilar ubicación</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Mantente al tanto de la ruta que lleva la persona que entró a la opción anterior.
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color='tertiary' style='text-align: center; font-style: italic;'>
+    Práctica de rutas - 153217 - IDS 8° - UP Chiapas
+  </ion-toolbar>
+</ion-footer>

@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'vigilar', loadChildren: './vigilar/vigilar.module#VigilarPageModule' },
+  { path: 'emitir', loadChildren: './emitir/emitir.module#EmitirPageModule' },
 ];
 
 @NgModule({
